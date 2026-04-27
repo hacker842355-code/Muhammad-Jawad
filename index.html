@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza Hut Pakistan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header id="navbar">
+    <div class="container nav-wrap">
+      <div class="logo">PIZZA HUT</div>
+      <nav id="nav-links">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#menu-section">Menu</a></li>
+          <li><a href="#order-section">Order Online</a></li>
+          <li><a href="#deals-section">Deals</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#order-section" class="btn btn-pulse hidden-mobile">Order Now</a>
+      <div class="hamburger" id="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <img src="https://pngimg.com/d/pizza_PNG44071.png" class="floating-pizza-img" alt="Delicious Pizza" />
+    <img src="https://pngimg.com/d/pizza_PNG44078.png" class="floating-pizza-img-2" alt="Pizza Slice" />
+    <div class="container hero-content">
+      <h1 class="animate-fade-up">Hot. Fresh.<br/>Delivered Across Pakistan.</h1>
+      <div class="hero-actions animate-fade-up">
+        <a href="#order-section" class="btn btn-red hero-btn">Order Now</a>
+        <a href="#menu-section" class="btn btn-white hero-btn">View Menu</a>
+      </div>
+    </div>
+    <div class="floating-badge">Fast<br/>Delivery<br/>🍕</div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu-section" class="scroll-reveal">
+    <div class="container">
+      <h2>Our Curated Menu</h2>
+      <div class="tabs">
+        <button class="tab-btn active" data-target="pizzas">Pizzas</button>
+        <button class="tab-btn" data-target="starters">Starters</button>
+        <button class="tab-btn" data-target="wraps">Wraps</button>
+        <button class="tab-btn" data-target="drinks">Drinks</button>
+      </div>
+
+      <div class="menu-content" id="menu-container">
+        <!-- JS will populate menu items here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Online Order Section -->
+  <section id="order-section" class="scroll-reveal">
+    <div class="container">
+      <h2>Order Online</h2>
+      <div class="order-grid">
+        <!-- Left: Order Form -->
+        <div class="order-form-panel">
+          <form id="order-form" novalidate>
+            <div class="form-group">
+              <label>Category</label>
+              <select id="order-category">
+                <option value="pizza">Pizza</option>
+                <option value="starter">Starters</option>
+                <option value="wrap">Wraps</option>
+                <option value="drink">Drinks & Shakes</option>
+              </select>
+            </div>
+
+            <div class="form-group" id="item-group">
+              <label>Item</label>
+              <select id="order-item"></select>
+            </div>
+
+            <div class="form-group" id="size-group">
+              <label>Size</label>
+              <div class="pill-toggle">
+                <label><input type="radio" name="size" value="Small" checked /> <span>Small</span></label>
+                <label><input type="radio" name="size" value="Medium" /> <span>Medium</span></label>
+                <label><input type="radio" name="size" value="Large" /> <span>Large</span></label>
+              </div>
+            </div>
+
+            <div class="form-group" id="crust-group">
+              <label>Crust Type</label>
+              <select id="order-crust">
+                <option>Original Pan</option>
+                <option>Thin N Crispy</option>
+                <option>Hand-Tossed</option>
+                <option>Stuffed Crust</option>
+              </select>
+            </div>
+
+            <div class="form-group qty-group">
+              <label>Quantity</label>
+              <div class="qty-control">
+                <button type="button" id="qty-minus" class="qty-btn">&ndash;</button>
+                <input type="number" id="order-qty" value="1" min="1" readonly />
+                <button type="button" id="qty-plus" class="qty-btn">+</button>
+              </div>
+            </div>
+
+            <button type="button" id="btn-add-line" class="btn btn-white full-width btn-add-line-margin">+ Add Specific Item</button>
+
+            <div class="form-group">
+              <label>Order Type</label>
+              <div class="switch-toggle">
+                <input type="radio" id="type-delivery" name="orderType" value="delivery" checked />
+                <label for="type-delivery">Delivery</label>
+                <input type="radio" id="type-carryout" name="orderType" value="carryout" />
+                <label for="type-carryout">Carryout</label>
+                <div class="sliding-bg"></div>
+              </div>
+            </div>
+
+            <div class="form-group slide-reveal" id="address-group">
+              <label>Delivery Address</label>
+              <div class="input-icon">
+                <span class="icon">📍</span>
+                <input type="text" id="delivery-address" placeholder="Enter full address" />
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Right: Order Summary -->
+        <div class="order-summary-panel">
+          <h3>Your Order</h3>
+          <ul id="summary-list" class="summary-list">
+            <!-- Dynamic items go here -->
+          </ul>
+          
+          <div class="totals">
+            <div class="total-row">
+              <span>Subtotal</span>
+              <span id="subtotal">Rs. 0</span>
+            </div>
+            <div class="total-row" id="delivery-fee-row">
+              <span>Delivery Charge</span>
+              <span>Rs. 100</span>
+            </div>
+            <div class="total-row grand-total">
+              <span>Grand Total</span>
+              <span id="grand-total">Rs. 0</span>
+            </div>
+          </div>
+
+          <button id="btn-place-order" class="btn btn-red full-width mt-1">
+            <span class="btn-text">Place Order</span>
+            <span class="spinner"></span>
+          </button>
+          
+          <div id="order-success" class="card-success">
+             <div class="check-animation"></div>
+             <h4>Order Confirmed!</h4>
+             <p>Your meal is being prepared.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deals Section -->
+  <section id="deals-section" class="scroll-reveal">
+    <div class="container">
+      <h2>Hot Deals</h2>
+      <div class="deals-grid">
+        <!-- Deal Cards generated in JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about-section" class="scroll-reveal">
+    <div class="container">
+      <div class="about-flex">
+        <div class="about-text">
+          <h2>About Pizza Hut Pakistan</h2>
+          <p>We've been serving up happiness across Pakistan for decades. Putting smiles on faces with every slice of our signature Original Pan Pizza. Freshly baked, locally sourced, and crafted with love.</p>
+        </div>
+        <div class="about-image"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery-section" class="scroll-reveal">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img class="gal-img" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTYyNDF8MHwxfHNlYXJjaHwxfHxwaXp6YXxlbnwwfHx8fDE3MDI0NjQwMjd8MA&ixlib=rb-4.0.3&q=80&w=800" alt="Gallery Image 1" />
+        <img class="gal-img" src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTYyNDF8MHwxfHNlYXJjaHwyfHxwaXp6YXxlbnwwfHx8fDE3MDI0NjQwMjd8MA&ixlib=rb-4.0.3&q=80&w=800" alt="Gallery Image 2" />
+        <img class="gal-img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTYyNDF8MHwxfHNlYXJjaHwzfHxwaXp6YXxlbnwwfHx8fDE3MDI0NjQwMjd8MA&ixlib=rb-4.0.3&q=80&w=800" alt="Gallery Image 3" />
+        <img class="gal-img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTYyNDF8MHwxfHNlYXJjaHw0fHxwaXp6YXxlbnwwfHx8fDE3MDI0NjQwMjd8MA&ixlib=rb-4.0.3&q=80&w=800" alt="Gallery Image 4" />
+        <img class="gal-img" src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTYyNDF8MHwxfHNlYXJjaHw1fHxwaXp6YXxlbnwwfHx8fDE3MDI0NjQwMjd8MA&ixlib=rb-4.0.3&q=80&w=800" alt="Gallery Image 5" />
+        <img class="gal-img" src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTYyNDF8MHwxfHNlYXJjaHw2fHxwaXp6YXxlbnwwfHx8fDE3MDI0NjQwMjd8MA&ixlib=rb-4.0.3&q=80&w=800" alt="Gallery Image 6" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="lb-close">&times;</span>
+    <span class="lb-prev">&#10094;</span>
+    <img class="lb-content" id="lb-img" />
+    <span class="lb-next">&#10095;</span>
+  </div>
+
+  <!-- Contact & Location (Footer) -->
+  <footer id="contact-section">
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <h3 class="footer-logo">PIZZA HUT</h3>
+        <p class="tagline">Flavors Made for Pakistan</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon">FB</a>
+          <a href="#" class="social-icon">IG</a>
+          <a href="#" class="social-icon">TK</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#menu-section">Menu</a></li>
+          <li><a href="#order-section">Order Online</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Mon - Sun 11AM - 11PM</p>
+        <a href="tel:111241241" class="phone-link">111-241-241</a>
+      </div>
+      <div class="footer-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14476.3242271816!2d67.0601344871582!3d24.89519149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f4a362eebb7%3A0xaadba825a0b7daff!2sPizza%20Hut%20Tariq%20Road!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Pizza Hut Pakistan. All rights reserved. (Demo)</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" title="Go to top">↑</button>
+
+  <script src="/script.js" type="module"></script>
+</body>
+</html>
+
