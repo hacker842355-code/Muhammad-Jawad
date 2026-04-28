@@ -1,15 +1,15 @@
 // Data
 const menuData = {
   pizzas: [
-    { id: 'p1', name: 'Chicken Tikka', desc: 'Legends collection', prices: { Small: 650, Medium: 1300, Large: 1800 }, img: 'pizza.jfif' },
-    { id: 'p2', name: 'BBQ Smokey', desc: 'Legends collection', prices: { Small: 650, Medium: 1300, Large: 1800 }, img: 'pizza.jfif' },
-    { id: 'p3', name: 'Cheese Lover', desc: 'Legends collection', prices: { Small: 650, Medium: 1300, Large: 1800 }, img: 'pizza.jfif' },
-    { id: 'p4', name: 'Mughlai Tikka', desc: 'Ultimate collection', prices: { Small: 700, Medium: 1450, Large: 1900 }, img: 'pizza.jfif' },
-    { id: 'p5', name: 'Afghan Tikka', desc: 'Ultimate collection', prices: { Small: 700, Medium: 1450, Large: 1900 }, img: 'pizza.jfif' },
-    { id: 'p6', name: 'Malai Boti Pizza', desc: 'Ultimate collection', prices: { Small: 700, Medium: 1450, Large: 1900 }, img: 'pizza.jfif' },
-    { id: 'p7', name: 'Chicken Cheese Stik', desc: 'Signature Pizza', prices: { Medium: 1700, Large: 2300 }, img: 'pizza.jfif' },
-    { id: 'p8', name: 'Crown Crust', desc: 'Signature Pizza', prices: { Medium: 1700, Large: 2300 }, img: 'pizza.jfif' },
-    { id: 'p9', name: 'Lava Pizza', desc: 'Signature Pizza', prices: { Large: 2500 }, img: 'pizza.jfif' }
+    { id: 'p1', name: 'Chicken Tikka', desc: 'Legends collection', prices: { Small: 650, Medium: 1300, Large: 1800 }, img: 'piz (2).png' },
+    { id: 'p2', name: 'BBQ Smokey', desc: 'Legends collection', prices: { Small: 650, Medium: 1300, Large: 1800 }, img: 'piz (2).png' },
+    { id: 'p3', name: 'Cheese Lover', desc: 'Legends collection', prices: { Small: 650, Medium: 1300, Large: 1800 }, img: 'piz (2).png' },
+    { id: 'p4', name: 'Mughlai Tikka', desc: 'Ultimate collection', prices: { Small: 700, Medium: 1450, Large: 1900 }, img: 'piz (2).png' },
+    { id: 'p5', name: 'Afghan Tikka', desc: 'Ultimate collection', prices: { Small: 700, Medium: 1450, Large: 1900 }, img: 'pics/piz (2).png' },
+    { id: 'p6', name: 'Malai Boti Pizza', desc: 'Ultimate collection', prices: { Small: 700, Medium: 1450, Large: 1900 }, img: 'piz (2).png' },
+    { id: 'p7', name: 'Chicken Cheese Stik', desc: 'Signature Pizza', prices: { Medium: 1700, Large: 2300 }, img: 'piz (2).png' },
+    { id: 'p8', name: 'Crown Crust', desc: 'Signature Pizza', prices: { Medium: 1700, Large: 2300 }, img: 'piz (2).png' },
+    { id: 'p9', name: 'Lava Pizza', desc: 'Signature Pizza', prices: { Large: 2500 }, img: 'piz (2).png' }
   ],
   starters: [
     { id: 's1', name: 'Chicken Nuggets (5 pcs)', desc: 'Crispy nuggets', prices: { Regular: 350 }, img: 'https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
@@ -33,10 +33,10 @@ const menuData = {
 };
 
 const dealsData = [
-  { img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", name: "Deal 1", price: 800, items: ["1 Small Pizza (Legends)", "1 Regular Fries", "1 Regular Drink"], mins: 15 },
-  { img: "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", name: "Deal 2", price: 1250, items: ["1 Small Pizza (Tikka/Fajita)", "1 Zinger Wrap", "1 Regular Drink"], mins: 45 },
-  { img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", name: "Deal 3", price: 2000, items: ["3 Small Pizzas (Legends)", "1 Liter Drink"], mins: 120 },
-  { img: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", name: "Deal 4", price: 2550, items: ["1 Large Pizza (Legends)", "10 Crispy wings", "1.5 Liter Drink"], mins: 300 }
+  { img: "piz (2).png", name: "Deal 1", price: 800, items: ["1 Small Pizza (Legends)", "1 Regular Fries", "1 Regular Drink"], mins: 15 },
+  { img: "piz (2).png", name: "Deal 2", price: 1250, items: ["1 Small Pizza (Tikka/Fajita)", "1 Zinger Wrap", "1 Regular Drink"], mins: 45 },
+  { img: "piz (2).png", name: "Deal 3", price: 2000, items: ["3 Small Pizzas (Legends)", "1 Liter Drink"], mins: 120 },
+  { img: "piz (2).png", name: "Deal 4", price: 2550, items: ["1 Large Pizza (Legends)", "10 Crispy wings", "1.5 Liter Drink"], mins: 300 }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
