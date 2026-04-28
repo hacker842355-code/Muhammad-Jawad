@@ -12,31 +12,31 @@ const menuData = {
     { id: 'p9', name: 'Lava Pizza', desc: 'Signature Pizza', prices: { Large: 2500 }, img: 'pizza.jfif' }
   ],
   starters: [
-    { id: 's1', name: 'Chicken Nuggets (5 pcs)', desc: 'Crispy nuggets', prices: { Regular: 350 }, img: 'pizza.jfif' },
-    { id: 's2', name: 'Chicken Nuggets (10 pcs)', desc: 'Crispy nuggets', prices: { Regular: 650 }, img: 'pizza.jfif' },
-    { id: 's3', name: 'Hot Crispy Wings (5 pcs)', desc: 'Spicy wings', prices: { Regular: 350 }, img: 'pizza.jfif' },
-    { id: 's4', name: 'Hot Crispy Wings (10 pcs)', desc: 'Spicy wings', prices: { Regular: 650 }, img: 'pizza.jfif' },
-    { id: 's5', name: 'Loaded Fries with Cheese', desc: 'Fries with melted cheese', prices: { Regular: 650 }, img: 'pizza.jfif' },
-    { id: 's6', name: 'Plain Fries', desc: 'Classic golden fries', prices: { Regular: 250 }, img: 'pizza.jfif' }
+    { id: 's1', name: 'Chicken Nuggets (5 pcs)', desc: 'Crispy nuggets', prices: { Regular: 350 }, img: 'https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+    { id: 's2', name: 'Chicken Nuggets (10 pcs)', desc: 'Crispy nuggets', prices: { Regular: 650 }, img: 'https://images.unsplash.com/photo-1562967914-608f82629710?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+    { id: 's3', name: 'Hot Crispy Wings (5 pcs)', desc: 'Spicy wings', prices: { Regular: 350 }, img: 'https://images.unsplash.com/photo-1527477396000-e27163b481c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+    { id: 's4', name: 'Hot Crispy Wings (10 pcs)', desc: 'Spicy wings', prices: { Regular: 650 }, img: 'https://images.unsplash.com/photo-1527477396000-e27163b481c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+    { id: 's5', name: 'Loaded Fries with Cheese', desc: 'Fries with melted cheese', prices: { Regular: 650 }, img: 'https://images.unsplash.com/photo-1579705745173-8bc6852bb2d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+    { id: 's6', name: 'Plain Fries', desc: 'Classic golden fries', prices: { Regular: 250 }, img: 'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' }
   ],
   wraps: [
-    { id: 'w1', name: 'Mexican Wrap', desc: 'Spicy grilled chicken wrap', prices: { Regular: 550 }, img: 'pizza.jfif' },
-    { id: 'w2', name: 'Chicken Tikka Wrap', desc: 'Traditional flavors wrapped', prices: { Regular: 500 }, img: 'pizza.jfif' },
-    { id: 'w3', name: 'Grill Wrap', desc: 'Juicy grilled chicken', prices: { Regular: 600 }, img: 'pizza.jfif' }
+    { id: 'w1', name: 'Mexican Wrap', desc: 'Spicy grilled chicken wrap', prices: { Regular: 550 }, img: 'https://images.unsplash.com/photo-1589301760014-d929f39ce9b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+    { id: 'w2', name: 'Chicken Tikka Wrap', desc: 'Traditional flavors wrapped', prices: { Regular: 500 }, img: 'https://images.unsplash.com/photo-1528736235302-52922df5c122?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+    { id: 'w3', name: 'Grill Wrap', desc: 'Juicy grilled chicken', prices: { Regular: 600 }, img: 'https://images.unsplash.com/photo-1626804475297-41609ea004bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' }
   ],
   drinks: [
-    { id: 'd1', name: 'Mango Juice', desc: 'Fresh & chilled', prices: { Regular: 350 }, img: 'pizza.jfif' },
-    { id: 'd2', name: 'Oreo Shake', desc: 'Thick chocolate shake', prices: { Regular: 500 }, img: 'pizza.jfif' },
-    { id: 'd3', name: 'Cappuccino Coffee', desc: 'Hot & frothy', prices: { Regular: 550 }, img: 'pizza.jfif' },
-    { id: 'd4', name: 'Karak Chai', desc: 'Strong local tea', prices: { Regular: 200 }, img: 'pizza.jfif' }
+    { id: 'd1', name: 'Mango Juice', desc: 'Fresh & chilled', prices: { Regular: 350 }, img: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+    { id: 'd2', name: 'Oreo Shake', desc: 'Thick chocolate shake', prices: { Regular: 500 }, img: 'https://images.unsplash.com/photo-1572490122747-3968b75bb811?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+    { id: 'd3', name: 'Cappuccino Coffee', desc: 'Hot & frothy', prices: { Regular: 550 }, img: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' },
+    { id: 'd4', name: 'Karak Chai', desc: 'Strong local tea', prices: { Regular: 200 }, img: 'https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' }
   ]
 };
 
 const dealsData = [
-  { img: "pizza.jfif", name: "Deal 1", price: 800, items: ["1 Small Pizza (Legends)", "1 Regular Fries", "1 Regular Drink"], mins: 15 },
-  { img: "pizza.jfif", name: "Deal 2", price: 1250, items: ["1 Small Pizza (Tikka/Fajita)", "1 Zinger Wrap", "1 Regular Drink"], mins: 45 },
-  { img: "pizza.jfif", name: "Deal 3", price: 2000, items: ["3 Small Pizzas (Legends)", "1 Liter Drink"], mins: 120 },
-  { img: "pizza.jfif", name: "Deal 4", price: 2550, items: ["1 Large Pizza (Legends)", "10 Crispy wings", "1.5 Liter Drink"], mins: 300 }
+  { img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", name: "Deal 1", price: 800, items: ["1 Small Pizza (Legends)", "1 Regular Fries", "1 Regular Drink"], mins: 15 },
+  { img: "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", name: "Deal 2", price: 1250, items: ["1 Small Pizza (Tikka/Fajita)", "1 Zinger Wrap", "1 Regular Drink"], mins: 45 },
+  { img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", name: "Deal 3", price: 2000, items: ["3 Small Pizzas (Legends)", "1 Liter Drink"], mins: 120 },
+  { img: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", name: "Deal 4", price: 2550, items: ["1 Large Pizza (Legends)", "10 Crispy wings", "1.5 Liter Drink"], mins: 300 }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {

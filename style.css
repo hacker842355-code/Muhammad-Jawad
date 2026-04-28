@@ -33,7 +33,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('pizza.jfif');
+  background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
   background-size: cover;
   background-position: center;
   opacity: 0.05;
@@ -274,7 +274,7 @@ header.scrolled .hamburger div {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('pizza.jfif');
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTYyNDF8MHwxfHNlYXJjaHwxfHxwaXp6YXxlbnwwfHx8fDE3MDI0NjQwMjd8MA&ixlib=rb-4.0.3&q=80&w=1920');
   background-size: cover;
   background-position: center;
   animation: zoomLoop 20s infinite ease-in-out;
@@ -876,7 +876,7 @@ select:focus, input[type="text"]:focus {
 .about-image {
   flex: 1;
   height: 400px;
-  background-image: url('pizza.jfif');
+  background-image: url('https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');
   background-size: cover;
   background-position: center;
   border-radius: 12px;
